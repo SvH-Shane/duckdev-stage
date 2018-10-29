@@ -1,0 +1,2 @@
+<a href="photo-license.php">Photo License</a> &nbsp;&nbsp;<a href="terms-and-conditions.php"> Terms & Conditions</a> &nbsp;&nbsp;<a href="helpcenter.php"> Helpcenter</a> &nbsp;&nbsp;<a href="privacy-policy.php"> Privacy policy </a>&nbsp;&nbsp;<a href="press-and-media.php"> Press & Media </a>
+	<span>&nbsp;&nbsp; &copy; <?php echo date("Y"); ?> DutchPlaneFinders</span> 

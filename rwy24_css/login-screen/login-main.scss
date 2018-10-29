@@ -1,0 +1,316 @@
+// Index DutchPlaneFinders //
+	// 01.XXX - Variables 
+	// [01] DPF font [02] DPF font size [03] Color Palette [04] Frequent CSS styling [05] Form styling [06] Other styling
+
+	// 02.XXX - Inlog screen - Offical CSS 
+	// [0] Start [01] Login Section [02] Statements and Messages [03] Indefinite Categories
+
+	// 03.XXX - Main website - Offical CSS 
+	// [0] Start [01] Login Section [02] Statements and Messages [03] Indefinite Categories
+
+/* 01. Variables */
+
+	// Before use, read dpf-style-guide
+@import "../elements/elements";
+
+/* 02.000 - Offical Css */ 
+html, body {
+	height: 100%;
+
+}
+body {
+	background-color:$blue;
+	color: #000;
+	font-family: $dpf-font;
+	font-weight: $font-weight__normal;
+	font-size: $alinea;
+	overflow-x:hidden;
+	 -webkit-overflow-x: hidden;
+	/*font-family: 'Hind Siliguri', sans-serif;*/
+	/*font-family: 'Roboto', sans-serif;*/
+	/*font-family: Yantramanav, sans-serif;*/
+}	
+* {
+	padding: 0px;
+	margin: 0px;
+}
+*:focus {
+    outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.dpf-inlog-modal {
+		width: 310px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.dpf-inlog-modal {
+		padding: 5px;
+	}
+}
+
+
+@media only screen and (min-width: 1200px) {
+	.dpf-inlog-modal {
+		padding: 0;
+	}
+}
+
+@media only screen and (min-width: 1250px) {
+	.dpf-inlog-modal {
+//		max-width: 1248px;
+	}
+}
+
+// 02.001 - Inlog screen - Offical CSS 
+	.dpf-inlog-container {
+		display: grid;
+		width: calc(100% - 20em);
+		max-width: 80em;
+		margin: auto;
+		grid-gap: 10px;
+		grid-row-gap: 15px;
+		grid-template: repeat(12, 1fr) / repeat(6, 1fr);
+	}
+	.dpf-inlog-modal {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 365px;
+		height: 500px;
+		color: $white;
+
+
+		.tablinks {
+			background: none;
+			color: inherit;
+			border: none;
+			padding: 0;
+			font: inherit;
+			cursor: pointer;
+			outline: inherit;
+			transition: 1s;
+		}
+		
+		.tablinks:hover {
+			color: $orange;
+			transition: 1s;
+		}
+		
+		
+		h2 {
+			color: $white;
+			font-weight: $font-weight__normal;
+		}
+		
+		
+	}
+	.dpf-inlog-modal__icon{
+		display: inline-block;
+		height: 70px;
+		width: 64px;
+	}
+	.dpf-inlog-modal__logo{
+		display: inline-block;
+		width: 70px;
+		height: 30px;
+		width: 288px;
+		float: right;
+		
+		span {
+		  border-right: .05em solid;
+		  animation: caret 1s steps(1) infinite;
+		}
+		
+		h1 {
+		  font-size: 1.5em;
+		  font-weight: $font-weight__normal;
+		  color: $white;
+		}
+
+		@keyframes caret {
+		  50% {
+			border-color: transparent;
+		  }
+		}
+	}
+
+
+
+	.dpf-inlog-modal__background{
+		position: absolute;
+		background-image: url(../img_files/dpf_img/inlog-screens/dpf-inlog-screen-2018.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+	}
+	.dpf-inlog-form {
+		margin-top: 50px;
+		width: inherit;
+		height: auto;
+		-webkit-animation: fadeEffect 1s;
+		animation: fadeEffect 1s;
+		
+		a {
+		text-decoration: none;
+		color: $white;
+		transition: 0.5s;
+
+		} a:hover {
+			color: $orange;
+			transition: 0.5s;
+		}
+	}
+	.dpf-inlog-yes {
+		display: inline-block;
+		margin-top: 20px;
+		width: 100%;
+		height: auto;
+		
+		span {
+			float: left;
+			margin-top: 12px;
+		}
+	}
+	.dpf-inlog-new {
+		display: inline-block;
+		margin-top: 50px;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.dpf-inlog-new__user {
+		display: inline-block;
+		margin-top: 10px;
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+	.tabcontent {
+		display: none;
+		padding: 6px 12px;
+		-webkit-animation: fadeEffect 1s;
+		animation: fadeEffect 1s;
+	}
+
+	/* Fade in tabs */
+	@-webkit-keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+
+	@keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+	#dpf-inlog-footer {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 1rem;
+		color: $white;
+		text-align: center;
+		
+		a{
+			color: $white;
+			margin-left: 10px;
+		}
+	}
+
+// 2.002 - Statements and Messages 
+	.dpf-inlog-message__error {
+		@extend .dpf-message;
+		background: red;
+		margin-bottom: 15px;
+	}
+	.dpf-inlog-message__warning {
+		@extend .dpf-message;
+		background: $orange;
+		margin-bottom: 15px;
+	}
+	.dpf-inlog-message__done {
+		@extend .dpf-message;
+		background: $green;
+		margin-bottom: 15px;
+	}
+// 2.003 - Indefinite Categories
+	.dpf-inlog-span {
+		display: table;
+    	margin: 10px auto;
+		
+// 3.001 - Main website - Offical CSS 
+		
+		a {
+		text-decoration: none;
+		color: $white;
+		transition: 0.5s;
+
+	} 
+	a:hover {
+		transition: 0.5s;
+		color: $orange;
+	}
+		
+
+	}
+
+@media only screen and (max-width: 768px) {
+	
+	select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+	.dpf-inlog-message__error {
+		overflow: auto;
+		margin-bottom: 40px;
+	}
+	
+	
+	.dpf-inlog-modal {
+		width: 310px;
+	}
+	
+	.dpf-inlog-modal__icon{
+		display: none;
+	}
+	
+	.dpf-inlog-modal__logo {
+		width: inherit;
+		margin-bottom: 90px;
+	}
+	.dpf-inlog-btn {
+		display: inline-block;
+		margin-top: 30px;
+		/* margin-left: 8px; */
+		width: 100%;
+		padding: 15px;
+		/* float: right; */
+		background-color: $green;
+	}
+	
+	.dpf-inlog-btn:hover {
+		display: inline-block;
+		margin-top: 30px;
+		/* margin-left: 8px; */
+		width: 100%;
+		padding: 15px;
+		background-color: $orange;
+		/* float: right; */
+	}
+	
+	#dpf-inlog-footer {
+		display: none;
+	}
+	
+	.dpf-inlog-modal__background{
+		background-color: #243747;
+	}
+}

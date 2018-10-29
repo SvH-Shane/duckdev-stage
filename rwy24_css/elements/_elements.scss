@@ -1,0 +1,84 @@
+// Index DutchPlaneFinders //
+// 01.XXX - Variables
+// [01] DPF font [02] DPF font size [03] Color Palette [04] Frequent CSS styling [05] Form styling [06] Other styling
+
+// 02.XXX - Inlog screen - Offical CSS
+// [0] Start [01] Login Section [02] Statements and Messages [03] Indefinite Categories
+
+// 03.XXX - Main website - Offical CSS
+// [0] Start [01] Login Section [02] Statements and Messages [03] Indefinite Categories
+
+
+
+/* 01. Variables */
+
+// Before use, read dpf-style-guide
+
+// 01.001 - Fonts
+$main-font: 'Noto Serif JP', sans-serif;
+$noto-serif: 'Noto Serif', serif;
+$headliners: 'Roboto', sans-serif;
+
+// Standard Font size 16px
+$alinea: 0.750em; // 16px
+$standard: 1em; // 16px - 9pt
+
+$font-weight__title: bold;
+$font-weight__intro: 500;
+$font-weight__normal: 300;
+$font-weight__bold: bold;
+
+// 01.002 - Color palette
+$orange: #f0c817;
+$blue: #243646;
+$green: #8bc47c;
+$red: #96281b;
+
+// Black & White colors
+$white: #ffffff;
+$light-grey: #f3f3f2;
+$medium-grey: #ededed;
+$dark-grey: #cacaca;
+$medium-black: #222222;
+$dark-black: #1d1918;
+
+// 01.003 - Element styling
+$box-line: 1px solid $dark-grey;
+$box-padding: 10px;
+$border-radius: 20px;
+
+// 01.004 - Frequent CSS styling
+h1 {
+	font-family: $headliners;
+	font-weight: $font-weight__title;
+}
+
+h2 {
+	font-weight: $font-weight__title;
+}
+
+h3 {
+	font-weight: $font-weight__intro;
+	color: $medium-black;
+}
+
+h4 {
+	font-weight: $font-weight__normal;
+	color: $dark-black;
+}
+
+b {
+	font-weight: $font-weight__title;
+}
+p {
+	display: block;
+	padding: 0 20px 0 20px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+}
+a{
+	color: inherit; /* blue colors for links too */
+	text-decoration: inherit; /* no underline */
+}

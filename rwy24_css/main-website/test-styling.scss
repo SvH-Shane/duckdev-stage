@@ -1,0 +1,51 @@
+/* Scss Document */
+
+@import "../main-website/main";
+@import "../elements/elements";
+
+#navbar {
+		vertical-align: middle;
+		width: 33.333%;
+		padding: 15px;
+		
+		
+
+	}
+	.dpf-timeline {
+		margin: 95px auto;
+		display: table;
+		vertical-align: middle;
+		width: 454px;
+		padding: 15px;
+		position: relative;
+		
+		
+	}
+	.dpf-right {
+		position: fixed;
+		display: table-cell;
+		vertical-align: middle;
+		width: 26.333%;
+		padding: 15px;
+		float: right;
+		right: 0px;
+
+		
+		
+		h3 {
+			font-weight: $font-weight__normal;
+		}
+	}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 115px;
+}
+
+.sticky + .dpf-timeline {
+  padding-top: 460px;
+}
