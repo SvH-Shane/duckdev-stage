@@ -89,7 +89,7 @@ a {
     transition: 0.5s;
     cursor: pointer; }
     .nav .duck-dev-logo span {
-      font-size: 50px; }
+      font-size: 40px; }
     .nav .duck-dev-logo:hover {
       transform: rotate(5deg); }
   .nav li {
@@ -344,7 +344,7 @@ a {
     width: 100px;
     height: 100px;
     border: 1px solid red;
-    background: red; }
+    background: blue; }
   #blog-item .section {
     margin: 50px 0 50px 0; }
     #blog-item .section__img {
@@ -438,7 +438,15 @@ a {
       position: absolute;
       top: -30px; }
     #blog-item .progressbar span {
-      position: absolute; }
+      position: absolute;
+      cursor: pointer; }
+
+.tab span {
+  cursor: pointer;
+  transition: 0.5s; }
+.tab span:hover {
+  font-weight: bold;
+  transition: 0.5s; }
 
 .footer {
   position: absolute;
