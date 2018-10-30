@@ -511,7 +511,7 @@
 		</div>
 		<div id="stage-2" class="tabcontent">
 			<div class="tab">
-				<span class="tablinks" onclick="openCity(event, 'stage-1')">
+				<span class="tablinks" id="defaultOpen" onclick="openCity(event, 'stage-1')">
 					Stage  #1
 				</span> &nbsp;&nbsp;&nbsp;
 				<span class="tablinks" onclick="openCity(event, 'stage-2')">
@@ -961,6 +961,8 @@ function openCity(evt, cityName) {
 	document.getElementById(cityName).style.display = "block";
 	evt.currentTarget.className += " active";
 }
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 </script>
 </body>
 </html>
