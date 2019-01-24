@@ -378,6 +378,12 @@ a {
 			&__light-blue {
 				color: #65b0ed;
 			}
+			&__green {
+				color: #A7C085;
+			}
+			&__red {
+				color: #C5757F;
+			}
 		}
 		.function {
 			padding-left:2em
@@ -575,6 +581,12 @@ a {
 		font-weight: bold;
         transition: 0.5s;
 	}
+}
+.small-block {
+	width: 120px;
+	height: 120px;
+	background: red;
+	border: 1px solid red;
 }
 .footer {
 	position: absolute;

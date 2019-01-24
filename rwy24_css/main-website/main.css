@@ -278,7 +278,7 @@ a {
       top: 130px;
       left: 26%;
       border-radius: 50%;
-      background-image: url(https://dgalywyr863hv.cloudfront.net/pictures/athletes/23906592/7181609/1/large.jpg);
+      background-image: url('../../img_files/blog-items/DSC01116.jpg');
       background-size: cover; }
     #blog-item .headliner::after {
       display: none;
@@ -456,3 +456,156 @@ a {
   text-align: center;
   font-size: 12px;
   color: #ffffff; }
+
+.img-album {
+	position: relative;
+	width: 100%;
+	height: 550px;
+	cursor: pointer;
+	overflow: hidden;
+	transition: 0.5s;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: 40px;
+}
+
+.img-album__caption {
+	position: absolute;
+	bottom: -70px;
+	padding-top: 150px;
+	left: 0;
+	width: 100%;
+	padding: 40px 20px 20px 20px;
+	color: White;
+	background: black;
+	overflow: hidden;
+	transition: .4s ease-out;
+	opacity: 0.9;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.img-album__caption:after {
+	content: '🤚';
+	position: absolute;
+	right: 50%;
+	top: 4px;
+	background-image: url(../img_files/blog-items/arrow-right.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 30px;
+}
+.img-album__caption:hover {
+	left: 0;
+	bottom: 0;
+}
+
+.important-capital {
+	position: relative;
+	width: 100%;
+}
+
+.important-capital:before {
+	content: '';
+	position: absolute;
+	top: 53%;
+	width: 120px;
+	height: 1px;
+	left: 0;
+	background-color: black;
+}
+.important-capital:after {
+	content: '';
+	position: absolute;
+	top: 53%;
+	width: 120px;
+	height: 1px;
+	right: 0;
+	background-color: black;
+}
+
+.iphone {
+	position: relative;
+	display: flex;
+	margin: 50px auto;
+	justify-content: center;
+	width: 280px;
+	height: 450px;
+	padding: 60px 10px;
+	border: 3px solid #ABB7B7;
+	border-radius: 40px;
+	background-color: #040505;
+}
+.iphone__soundbar {
+	position: absolute;
+	width: 70px;
+	top: 30px;
+	height: 5px;
+	border-radius: 5px;
+	background: #1f1f20;
+}
+.iphone__soundbar:after{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	left: -35px;
+	top: -4px;
+	width: 8px;
+	height: 8px;
+	background: #2e2d2e;
+	border: 4px solid #0f0f0f;
+}
+
+.iphone__home-button {
+	position: absolute;
+	border-radius: 50%;
+	left: 40%;
+	right: 40%;
+	bottom: 8px;
+	width: 43px;
+	height: 43px;
+	cursor: pointer;
+	border: 1px solid #252527;
+}
+.iphone__screen {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background-color: #0f0f0f;
+}
+
+.iphone__screen .image {
+	width: 100%;
+}
+
+.iphone__screen:hover {
+
+}
+
+.iphone__screen:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 30%;
+	bottom: 0;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+	z-index: 2;
+}
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+.wrapper h3 {
+	position: absolute;
+	width: 100%;
+	padding-bottom: 10px;
+	margin-bottom: 90px;
+}
+
+.wrapper a {
+	margin-top: 20px;
+}
